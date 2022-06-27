@@ -3,11 +3,10 @@ import path, { dirname } from 'path';
 import https from 'https';
 import express from 'express';
 import { fileURLToPath } from 'url';
-import DraftLog from 'draftlog';
+
+import followings from './data/data.json' assert { type: 'json' };
 
 import 'dotenv/config';
-
-DraftLog(console);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,6 +27,10 @@ const server = https.createServer(options, app);
 
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
+});
+
+app.get('/followings', (req, res) => {
+  res.send(followings);
 });
 
 app.get('/', (req, res) => {
