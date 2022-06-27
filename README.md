@@ -1,22 +1,6 @@
-# ring
+# react-twitter-following
 
-## To do
-
-- Move state to views and pass it down as props making the components as dumb as possible.
-- Check to see if email already exists on signup
-
-## Requirements
-
-- Markup
-- Notifications
-- ~~recoil/react-query~~
-- ~~Auth0 / react-router to login (JWT?)~~
-- ~~NoSQL database - currently Acebase~~
-- A way to manage the web-rings
-	- Protocol for connections
-- RSS feed
-- Mailing list
-- Basic set-up so that anyone can create their own server, but communicate with others in the ring. Basic decentralisation. But then how does authorisation work? You can't have decentralisation without a central auth server.
+Small app to show Twitter followings.
 
 ## Licence
 

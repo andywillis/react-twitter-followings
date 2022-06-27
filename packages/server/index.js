@@ -12,8 +12,8 @@ DraftLog(console);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const key = fs.readFileSync(`${__dirname}/auth/express-key.pem`);
-const cert = fs.readFileSync(`${__dirname}/auth/express-cert.pem`);
+const key = fs.readFileSync(`${__dirname}/auth/key.pem`);
+const cert = fs.readFileSync(`${__dirname}/auth/cert.pem`);
 
 const options = { key, cert };
 
