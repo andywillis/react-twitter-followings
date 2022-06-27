@@ -1,4 +1,30 @@
 .card {
-  padding: 1em;
-  background-color: #dfdfdf;
+  border: 1px solid #ababab;
+  background-color: #efefef;
+  padding: 0.5rem 0;
 }
+
+.card:hover {
+  background-color: #ffffaa;
+  cursor: pointer; 
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1em;
+  width: 75%;
+}
+
+.name {
+  padding-left: 2rem;
+  font-size: 1rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover { color: red; }
