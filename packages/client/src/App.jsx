@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+
+import Header from './components/Header';
 import Grid from './components/Grid';
 
 import styles from './App.module.css';
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <div className={styles.app}>
+      <Header />
       <Grid data={data} />
     </div>
   );
