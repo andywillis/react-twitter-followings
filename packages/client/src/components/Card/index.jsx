@@ -35,6 +35,7 @@ function Card({ card }) {
               {name}
             </div>
           </div>
+          {/* <span className={styles.notification}>13</span> */}
         </div>
         {!isLoaded && <div>&nbsp;</div>}
       </div>

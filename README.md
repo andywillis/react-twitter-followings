@@ -2,6 +2,12 @@
 
 Small app to show Twitter followings.
 
+## Thinking about
+
+- Socket
+- XML/JSON conversion
+- Notification spots
+
 ## Licence
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]

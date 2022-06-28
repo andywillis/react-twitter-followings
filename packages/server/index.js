@@ -1,38 +1,14 @@
-import fs from 'fs';
-import path, { dirname } from 'path';
-import https from 'https';
-import express from 'express';
-import { fileURLToPath } from 'url';
+import { app, port, server } from './helpers/express';
+import dirname from './helpers/dirname';
+import couch from './helpers/couch';
+
+import routes from './routes'
 
 import followings from './data/data.json' assert { type: 'json' };
 
-import 'dotenv/config';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const key = fs.readFileSync(`${__dirname}/auth/key.pem`);
-const cert = fs.readFileSync(`${__dirname}/auth/cert.pem`);
-
-const options = { key, cert };
-
-const app = express();
-
-app.use(express.static(path.join(__dirname, '../build')));
-app.use(express.json());
-
-const port = process.env.PORT || 4000;
-
-const server = https.createServer(options, app);
+app.get('/followings', routes.followings(followings));
+app.get('/', routes.root());
 
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
-});
-
-app.get('/followings', (req, res) => {
-  res.send(followings);
-});
-
-app.get('/', (req, res) => {
-  res.json({ status: 'success' });
 });
