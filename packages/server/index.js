@@ -1,5 +1,7 @@
 import { app, port, server } from './helpers/express';
 import dirname from './helpers/dirname';
+import couch from './helpers/couch';
+
 import routes from './routes'
 
 import followings from './data/data.json' assert { type: 'json' };
