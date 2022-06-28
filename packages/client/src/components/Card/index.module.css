@@ -7,6 +7,7 @@
 .card {
   background-color: #efefef;
   padding: 0.5rem 0;
+  position: relative;
 }
 
 .card:hover {
@@ -43,4 +44,15 @@
 .disabled {
   pointer-events: none;
   cursor: default;
+}
+
+.notification {
+  background-color: #fa893e;
+  /* border-radius: 5px; */
+  color: white;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
