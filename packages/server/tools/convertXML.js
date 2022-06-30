@@ -18,7 +18,8 @@ async function convertXML(dir) {
     (await Promise.all(promises)).forEach(entry => {
       console.log(`Writing ${entry[0]}`);
       const json = parser.parse(entry[1]);
-      fs.promises.writeFile(`./data/json/${entry[0]}`, JSON.stringify(json, null, 2));
+      json.rss.channel.name = entry[0].replace('.json', '');
+      fs.promises.writeFile(`../data/json/${entry[0]}`, JSON.stringify(json, null, 2));
     });
 
   } catch (e) {
@@ -27,5 +28,5 @@ async function convertXML(dir) {
 
 }
 
-const dir = './data/xml';
+const dir = '../data/xml';
 convertXML(dir);
