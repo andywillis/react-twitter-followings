@@ -1,6 +1,27 @@
-# react-twitter-following
+# react-twitter-followings
 
-Small app to show Twitter (via Nitter) followings.
+## Summary
+
+Small React app to show show a dashboard of Twitter (via Nitter) followings (people I'm following) with links to their Nitter profiles.
+
+Additional tools to:
+
+  - ✔ Download a current RSS feed per following
+
+  - ✔ Conversion tool to create JSON from the RSS XML
+
+  - ✔ Batch upload tool to add the JSON to couchdb
+
+  - Tool to monitor the RSS feeds, check them against the current state of the database, and use SSE to send updates to the React app.
+
+## Tech
+
+- [React - Node/Express - Vite](https://github.com/andywillis/vite-react-express-boilerplate)
+- [`fast-xml-parser`](https://github.com/NaturalIntelligence/fast-xml-parser)
+- couchdb
+- SSE
+
+---
 
 ## Licence
 
