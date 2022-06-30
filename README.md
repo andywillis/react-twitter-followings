@@ -1,12 +1,6 @@
 # react-twitter-following
 
-Small app to show Twitter followings.
-
-## Thinking about
-
-- Socket
-- XML/JSON conversion
-- Notification spots
+Small app to show Twitter (via Nitter) followings.
 
 ## Licence
 
