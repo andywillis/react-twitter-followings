@@ -14,4 +14,5 @@ const {
 console.log(name, item);
 
 const dates = item.map(obj => obj.pubDate);
+
 console.log(dates);
