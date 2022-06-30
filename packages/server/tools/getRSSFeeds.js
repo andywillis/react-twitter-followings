@@ -2,7 +2,7 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import createThrottle from 'async-throttle';
 
-import dirname from './dirname';
+import dirname from '../helpers/dirname';
 
 const throttle = createThrottle(12);
 

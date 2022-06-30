@@ -3,7 +3,7 @@ import express from 'express';
 import https from 'https';
 
 import dirname from './dirname';
-import serverOptions from './getServerOptions';
+import serverOptions from './serverOptions';
 
 const app = express();
 
