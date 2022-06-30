@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express';
 import https from 'https';
 
-import dirname from './dirname';
+import dirname from '../helpers/dirname';
 import serverOptions from './serverOptions';
 
 const app = express();
