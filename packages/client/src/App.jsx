@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
+import { useRecoilValue } from 'recoil';
 
 import Header from './components/Header';
 import Grid from './components/Grid';
 
 import styles from './App.module.css';
 
+import appTitleState from './store/atoms/appTitle';
+
 function App() {
 
   const [ data, setData ] = useState([]);
+  const appTitle = useRecoilValue(appTitleState);
 
   useEffect(() => {
 
@@ -32,7 +36,7 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <Header />
+      <Header title={appTitle} />
       <Grid data={data} />
     </div>
   );

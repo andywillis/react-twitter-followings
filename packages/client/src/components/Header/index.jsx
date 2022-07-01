@@ -1,9 +1,9 @@
 import styles from './index.module.css';
 
-function Header() {
+function Header({ title }) {
   return (
     <header className={styles.header}>
-      React Twitter Following
+      {title}
     </header>
   );
 }
