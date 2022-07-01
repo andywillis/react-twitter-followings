@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { app, port, server } from './service/express';
 import couch from './service/couch';
 import dirname from './helpers/dirname';
