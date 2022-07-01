@@ -25,12 +25,14 @@ function Card({ card }) {
     [styles.disabled]: !isLoaded
   });
 
+  const alt = `Avatar for ${name}`;
+
   return (
     <a href={href} className={anchorStyle}>
       <div className={styles.container}>
         <div className={cardStyle}>
           <div className={styles.details}>
-            <Image src={img} alt={name} handleImageLoad={handleImageLoad} />
+            <Image src={img} alt={alt} handleImageLoad={handleImageLoad} />
             <div className={styles.name}>
               {name}
             </div>

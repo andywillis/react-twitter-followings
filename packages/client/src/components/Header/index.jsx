@@ -3,7 +3,7 @@ import styles from './index.module.css';
 function Header({ title }) {
   return (
     <header className={styles.header}>
-      {title}
+      <h1 className={styles.heading}>{title}</h1>
     </header>
   );
 }
