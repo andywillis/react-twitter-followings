@@ -1,6 +1,7 @@
 import path from 'path';
 import express from 'express';
 import https from 'https';
+import http from 'http';
 
 import dirname from '../helpers/dirname';
 import serverOptions from './config/server';
@@ -12,6 +13,8 @@ app.use(express.json());
 
 const port = process.env.PORT || 4000;
 
-const server = https.createServer(serverOptions, app);
+const server = process.env.NODE_ENV === 'production'
+  ? http.createServer(app)
+  : https.createServer(serverOptions, app);
 
 export { app, port, server };
