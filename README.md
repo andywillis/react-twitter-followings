@@ -2,7 +2,7 @@
 
 ## Summary
 
-Small React app to show show a dashboard of Twitter (via Nitter) followings (people I'm following) with links to their Nitter profiles.
+Small React app to show show an dashboard of Twitter (via Nitter) followings (people I'm following) with links to their [Nitter](https://nitter.net/about) profiles.
 
 Additional tools to:
 
