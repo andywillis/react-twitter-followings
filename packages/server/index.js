@@ -1,8 +1,8 @@
-import { app, port, server } from './service/express.js';
-import couch from './service/couch.js';
-import dirname from './helpers/dirname.js';
+import { app, port, server } from './service/express';
+import couch from './service/couch';
+import dirname from './helpers/dirname';
 
-import routes from './routes/index.js'
+import routes from './routes/index'
 
 import followings from './data/followings.json' assert { type: 'json' };
 
