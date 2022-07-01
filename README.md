@@ -2,7 +2,7 @@
 
 ## Summary
 
-Small React app to show show a dashboard of Twitter (via Nitter) followings (people I'm following) with links to their Nitter profiles.
+Small React app to show show an dashboard of Twitter (via Nitter) followings (people I'm following) with links to their [Nitter](https://nitter.net/about) profiles.
 
 Additional tools to:
 
@@ -17,9 +17,19 @@ Additional tools to:
 ## Tech
 
 - [React - Node/Express - Vite](https://github.com/andywillis/vite-react-express-boilerplate)
+- [recoil](https://recoiljs.org/)
 - [`fast-xml-parser`](https://github.com/NaturalIntelligence/fast-xml-parser)
 - couchdb
 - SSE
+
+## Installation
+
+- Clone the repo
+- In the repo folder
+  - `yarn install`
+  - `yarn run dev`
+
+Open `localhost:3000`.
 
 ---
 
