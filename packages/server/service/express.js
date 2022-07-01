@@ -8,7 +8,7 @@ import serverOptions from './config/server';
 
 const app = express();
 
-app.use(express.static(path.join(dirname, '../build')));
+app.use(express.static(path.join(dirname, '../../client/build')));
 app.use(express.json());
 
 const port = process.env.PORT || 4000;
