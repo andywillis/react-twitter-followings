@@ -21,6 +21,15 @@ Additional tools to:
 - couchdb
 - SSE
 
+## Installation
+
+- Clone the repo
+- In the repo folder
+  - `yarn install`
+  - `yarn run dev`
+
+Open `localhost:3000`.
+
 ---
 
 ## Licence
