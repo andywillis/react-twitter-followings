@@ -6,7 +6,6 @@ function Grid({ data }) {
   return (
     <main className={styles.grid}>
       {data.map(card => {
-        console.log(card);
         return (
           <Card
             key={card.name}
