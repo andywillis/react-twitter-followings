@@ -5,7 +5,7 @@
 }
 
 .card {
-  background-color: #efefef;
+  /* background-color: #efefef; */
   padding: 0.5rem 0;
   position: relative;
   animation: fadein 1s

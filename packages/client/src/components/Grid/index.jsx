@@ -4,7 +4,7 @@ import styles from './index.module.css';
 
 function Grid({ data }) {
   return (
-    <div className={styles.grid}>
+    <main className={styles.grid}>
       {data.map(card => {
         console.log(card);
         return (
@@ -14,7 +14,7 @@ function Grid({ data }) {
           />
         );
       })}
-    </div>
+    </main>
   );
 }
 
