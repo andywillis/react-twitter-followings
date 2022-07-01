@@ -1,1 +1,1 @@
-web: node packages/server/index.js -port 8000
+web: node --experimental-specifier-resolution=node --experimental-json-modules packages/server/index.js -port 8000
