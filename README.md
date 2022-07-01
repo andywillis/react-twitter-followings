@@ -17,6 +17,7 @@ Additional tools to:
 ## Tech
 
 - [React - Node/Express - Vite](https://github.com/andywillis/vite-react-express-boilerplate)
+- [recoil](https://recoiljs.org/)
 - [`fast-xml-parser`](https://github.com/NaturalIntelligence/fast-xml-parser)
 - couchdb
 - SSE
