@@ -2,11 +2,11 @@
 import { defineConfig } from 'vite';
 
 import react from '@vitejs/plugin-react';
-// import compress from 'vite-plugin-compress';
+import compress from 'vite-plugin-compress';
 import { splitVendorChunkPlugin } from 'vite'
 
 export default defineConfig({
-  plugins: [ react(), splitVendorChunkPlugin() ],
+  plugins: [ react(), compress(), splitVendorChunkPlugin() ],
   server: {
     proxy: {
       '/followings': {
