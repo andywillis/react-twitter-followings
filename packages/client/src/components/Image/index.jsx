@@ -11,6 +11,8 @@ function Image({ alt, src, handleImageLoad }) {
   return (
     <div className={styles.img}>
       <img
+        width="48px"
+        height="48px"
         alt={alt}
         src={src}
         onLoad={handleImageLoad}
