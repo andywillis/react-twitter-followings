@@ -2,7 +2,7 @@ import Card from '../Card';
 
 import styles from './index.module.css';
 
-function Grid({ data }) {
+function Grid({ data, randomSource }) {
   return (
     <main className={styles.grid}>
       {data.map(card => {
@@ -10,6 +10,7 @@ function Grid({ data }) {
           <Card
             key={card.name}
             card={card}
+            randomSource={randomSource}
           />
         );
       })}

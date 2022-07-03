@@ -1,8 +1,8 @@
 import { atom } from 'recoil';
 
-const appTitle = atom({
+const appTitleState = atom({
   key: 'appTitle',
-  default: 'React Twitter Followings',
+  default: 'React Twitter Followings'
 });
 
-export default appTitle;
+export default appTitleState;
