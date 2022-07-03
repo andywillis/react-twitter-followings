@@ -1,6 +1,6 @@
 import { atom } from 'recoil';
 
-const sources = atom({
+const sourcesState = atom({
   key: 'sources',
   default: [
     'https://nitter.net',
@@ -38,4 +38,4 @@ const sources = atom({
   ]
 });
 
-export default sources;
+export default sourcesState;

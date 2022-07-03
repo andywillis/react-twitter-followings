@@ -5,7 +5,7 @@ import Image from '../Image';
 
 import styles from './index.module.css';
 
-function Card({ card }) {
+function Card({ card, randomSource }) {
 
   const [ isLoaded, setIsLoaded ] = useState(false);
 
@@ -25,10 +25,11 @@ function Card({ card }) {
     [styles.disabled]: !isLoaded
   });
 
+  const randomHref = href.replace('https://nitter.net', randomSource);
   const alt = `Avatar for ${name}`;
 
   return (
-    <a href={href} className={anchorStyle}>
+    <a href={randomHref} className={anchorStyle}>
       <div className={styles.container}>
         <div className={cardStyle}>
           <div className={styles.details}>

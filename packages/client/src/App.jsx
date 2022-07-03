@@ -9,12 +9,14 @@ import styles from './App.module.css';
 
 import appTitleState from './store/atoms/appTitle';
 import footerMessageState from './store/atoms/footerMessage';
+import randomSourceState from './store/selectors/randomSource';
 
 function App() {
 
   const [ data, setData ] = useState([]);
   const appTitle = useRecoilValue(appTitleState);
   const footerMessage = useRecoilValue(footerMessageState);
+  const randomSource = useRecoilValue(randomSourceState);
 
   useEffect(() => {
 
@@ -40,7 +42,7 @@ function App() {
   return (
     <div className={styles.app}>
       <Header title={appTitle} />
-      <Grid data={data} />
+      <Grid data={data} randomSource={randomSource} />
       <Footer message={footerMessage} />
     </div>
   );
