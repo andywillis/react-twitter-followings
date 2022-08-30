@@ -1,4 +1,5 @@
 import fs from 'fs';
+
 import rootname from '../../../rootname';
 
 const key = fs.readFileSync(`${rootname}/auth/key.pem`);
