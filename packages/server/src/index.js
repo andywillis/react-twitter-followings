@@ -1,13 +1,13 @@
 import 'dotenv/config';
 import { app, port, server } from './service/express';
-import couch from './service/couch';
-import dirname from './helpers/dirname';
+// import couch from './service/couch';
+// import dirname from './helpers/dirname';
 
-import routes from './routes/index'
+import routes from './routes/index';
 
 import sseFunction from './helpers/sseFunction';
 
-import followings from './data/followings.json' assert { type: 'json' };
+import followings from '../data/followings' assert { type: 'json' };
 
 app.get('/stream', routes.sse(sseFunction));
 app.get('/followings', routes.followings(followings));

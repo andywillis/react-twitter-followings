@@ -1,10 +1,24 @@
 {
   "name": "server",
+  "private": true,
   "version": "0.0.1",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --experimental-specifier-resolution=node --experimental-json-modules index"
+    "dev": "nodemon --experimental-specifier-resolution=node --experimental-json-modules src/index.js"
+  },
+  "dependencies": {
+    "async-throttle": "^1.1.0",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.1",
+    "draftlog": "^1.0.13",
+    "express": "^4.17.1",
+    "fast-xml-parser": "^4.0.8",
+    "nano": "^10.0.0",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   },
   "license": "CC-BY-NC-SA-4.0"
 }

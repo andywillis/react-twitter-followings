@@ -4,8 +4,15 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"
   ],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "plugins": [
+        "@babel/plugin-syntax-import-assertions"
+      ]
+    }
   },
   "globals": {
     "React": true
@@ -18,18 +25,18 @@
     "browser": true
   },
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": [
-      "warn", {
-        "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
-      }
-    ],
     "import/extensions": [1, {
       "css": "never",
       "js": "never",
       "jsx": "never",
       "json": "never"
     }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn", {
+        "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
+      }
+    ],
     "react/jsx-props-no-spreading": 0,
     "import/no-extraneous-dependencies": 0,
     "no-underscore-dangle": 0,
