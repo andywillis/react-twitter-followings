@@ -1,7 +1,6 @@
 import 'dotenv/config';
 import { app, port, server } from './service/express';
 // import couch from './service/couch';
-// import dirname from './helpers/dirname';
 
 import routes from './routes/index';
 
@@ -14,5 +13,5 @@ app.get('/followings', routes.followings(followings));
 app.get('/', routes.root());
 
 server.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`https server running on port ${port}`);
 });
