@@ -6,6 +6,7 @@ import compress from 'vite-plugin-compression';
 
 export default defineConfig({
   plugins: [ react(), compress(), splitVendorChunkPlugin() ],
+  root: 'src',
   server: {
     proxy: {
       '/followings': {
@@ -21,7 +22,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'build',
+    target: 'esnext',
+    outDir: '../build',
     sourcemap: true
   }
 });
